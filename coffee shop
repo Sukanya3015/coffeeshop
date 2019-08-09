@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int price,r,s,re,count=0,offer;
+ printf("-------COFFEE SHOP------");
+ printf("Enter the price for coffee");
+ scanf("%d",&price);
+ printf("Enter the offer percentage");
+ scanf("%d",&offer);
+ while(count<=5)
+ {
+  printf("Coffee price is ",price);
+  if((0<=price<=10000)&&(0<=offer<=100))
+  {
+    count++;
+    r=offer/100;
+    re=r*price;
+    s=price-re;
+    printf("The coffee price after applying offer is",s);
+   }
+   else
+   {
+    printf("Coffee is available for free");
+   }
+ }
+ getch();
+}
+  
+    
+    
+    
+    
